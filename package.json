@@ -22,5 +22,11 @@
   "homepage": "https://github.com/phzfi/course-unit-test#readme",
   "dependencies": {
     "jest": "^28.1.0"
+  },
+  "devDependencies": {
+    "backstopjs": "^6.0.4",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "license-to-fail": "^4.0.0"
   }
 }
