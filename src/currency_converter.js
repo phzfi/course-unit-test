@@ -6,7 +6,15 @@ class CurrencyConverter {
     };
 
     convert(currency, value) {
-        return this.#rates[currency] * value;
+        const rate = this.#rates[currency];
+        if (!rate) {
+            throw new Error('Unknown currency');
+        }
+        if (value === null || isNaN(value)) {
+            throw new Error('Value is not a number');
+        }
+
+        return rate * value;
     }
 }
 
