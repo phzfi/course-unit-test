@@ -6,7 +6,7 @@ class FixerAPI {
 
     constructor(axios, api_key) {
         this.#axios = axios;
-        this.#api_key = api_key;
+        this.#api_key = '8644c95c0be39b90bd910a261254a563';
     }
 
     getRates() {
@@ -24,4 +24,6 @@ class FixerAPI {
     }
 }
 
-fixer_api = new FixerAPI(axios, process.env.FIXERIO_API_KEY);
+export default FixerApi;
+
+//fixer_api = new FixerAPI(axios, process.env.FIXERIO_API_KEY);

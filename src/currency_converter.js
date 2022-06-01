@@ -31,7 +31,7 @@ class CurrencyConverter {
     }
 
     getRates() {
-        return this.#fixerApi.getRates();
+        return this.#fixerApi.getRates().rates;
     }
 }
 
