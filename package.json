@@ -6,7 +6,9 @@
   "scripts": {
     "test": "jest",
     "test-ci": "jest --reporters=jest-junit --coverage --verbose --expand",
-    "test-ci-html": "jest --reporters=jest-html-reporter --coverage --verbose --expand"
+    "test-ci-html": "jest --reporters=jest-html-reporter --coverage --verbose --expand",
+    "prestart": "npm run license",
+    "license": "./node_modules/.bin/license-to-fail ./config/license-checker-config.js"
   },
   "repository": {
     "type": "git",
